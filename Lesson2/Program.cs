@@ -4,16 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите год для определелия его как высокосный.");
+            Console.WriteLine("Введите год для определелия его как високосный.");
             Console.WriteLine("Вводимое число должно быть целое, положительное и меньше 30000:");
             int god = Convert.ToInt32(Console.ReadLine());
 
             if ((god % 1 == 0) && (god > 0) && (god < 30000))
             {
                 if (((god % 4 == 0) && (god % 100 != 0)) || (god % 400 == 0))
-                { Console.WriteLine("YES, Высокосный год."); }
+                { Console.WriteLine("YES, Високосный год."); }
                 else
-                { Console.WriteLine("NO, Не высокосный год."); }
+                { Console.WriteLine("NO, Не високосный год."); }
             }
             else
             { Console.WriteLine("Введено некорректное значение!"); }
