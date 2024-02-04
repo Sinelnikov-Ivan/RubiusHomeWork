@@ -16,7 +16,7 @@
                 { Console.WriteLine("NO, Не высокосный год."); }
             }
             else
-            { Console.WriteLine("Введено не корректное значение!"); }
+            { Console.WriteLine("Введено некорректное значение!"); }
 
 
             Console.ReadLine();
