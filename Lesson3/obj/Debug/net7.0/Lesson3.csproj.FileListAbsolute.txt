@@ -1,0 +1,14 @@
+C:\!_C_Sharp\RubiusHomeWork\Lesson3\obj\Debug\net7.0\Lesson3.GeneratedMSBuildEditorConfig.editorconfig
+C:\!_C_Sharp\RubiusHomeWork\Lesson3\obj\Debug\net7.0\Lesson3.AssemblyInfoInputs.cache
+C:\!_C_Sharp\RubiusHomeWork\Lesson3\obj\Debug\net7.0\Lesson3.AssemblyInfo.cs
+C:\!_C_Sharp\RubiusHomeWork\Lesson3\obj\Debug\net7.0\Lesson3.csproj.CoreCompileInputs.cache
+C:\!_C_Sharp\RubiusHomeWork\Lesson3\bin\Debug\net7.0\Lesson3.exe
+C:\!_C_Sharp\RubiusHomeWork\Lesson3\bin\Debug\net7.0\Lesson3.deps.json
+C:\!_C_Sharp\RubiusHomeWork\Lesson3\bin\Debug\net7.0\Lesson3.runtimeconfig.json
+C:\!_C_Sharp\RubiusHomeWork\Lesson3\bin\Debug\net7.0\Lesson3.dll
+C:\!_C_Sharp\RubiusHomeWork\Lesson3\bin\Debug\net7.0\Lesson3.pdb
+C:\!_C_Sharp\RubiusHomeWork\Lesson3\obj\Debug\net7.0\Lesson3.dll
+C:\!_C_Sharp\RubiusHomeWork\Lesson3\obj\Debug\net7.0\refint\Lesson3.dll
+C:\!_C_Sharp\RubiusHomeWork\Lesson3\obj\Debug\net7.0\Lesson3.pdb
+C:\!_C_Sharp\RubiusHomeWork\Lesson3\obj\Debug\net7.0\Lesson3.genruntimeconfig.cache
+C:\!_C_Sharp\RubiusHomeWork\Lesson3\obj\Debug\net7.0\ref\Lesson3.dll
