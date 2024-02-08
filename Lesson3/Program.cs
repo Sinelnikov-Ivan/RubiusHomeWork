@@ -4,56 +4,54 @@
     {
         static void Main(string[] args)
         {
-           
-            
- // ____________________________________Ввод размера массива с проверкой________________________________________
-
-            int LenghtArray;                            // Длинна массива
-            int ValueOfArroy;                           // Переменная для заполнения значений массива
+        
+            int arrayLenght;                            
+            int valueOfArray;                          
             
             do
-            { Console.WriteLine("Введите размер одномерного массива (целое, положительное значение, от 2 до 10:"); }
+            {
+                Console.WriteLine("Введите размер одномерного массива (целое, положительное значение, от 2 до 10:"); 
+            }
             while
                 (
-                    !((int.TryParse(Console.ReadLine(), out LenghtArray))  // введёное значение INT?
-                    && (LenghtArray < 10)               // ограничимся количеством значений массива 10
-                    && (LenghtArray > 1))               // если значений меньше двух это не массив
+                !((int.TryParse(Console.ReadLine(), out arrayLenght))   
+                && (arrayLenght < 10)                                   
+                && (arrayLenght > 1))                                   
                 );
 
-//____________________________________Инициализация массива и ввод значений массива с проверкой________________________________________
+            int[] MyArray = new int[arrayLenght];                       
 
-                        
-            int[] MyArray = new int[LenghtArray];       // Инициализируем массив.
-
-            for (int i = 0; i < MyArray.Length; i++)    // Наполняем значениями массив, с проверкой типа.
+            for (int i = 0; i < MyArray.Length; i++)                
             {
                 do
-                { Console.WriteLine($"Введите целое значение элемента массива номер {i+1}"); }
-                while (!(int.TryParse(Console.ReadLine(), out ValueOfArroy)));
-
-                MyArray[i] = ValueOfArroy;
+                { 
+                    Console.WriteLine($"Введите целое значение элемента массива номер {i+1}"); 
+                }
+                while (!int.TryParse(Console.ReadLine(), out valueOfArray));
+            
+            MyArray[i] = valueOfArray;
             }
 
-
-//____________________________________Поиск второго наибольшего значения в массиве________________________________________
-
-
-            int x1 = int.MinValue;                      //Переменная максимального значения в массиве;
-            int x2 = x1;                                //Второе наибольшее значение в массиве;
-
-            foreach (int i in MyArray)
+            int x1 = int.MinValue;                              
+            int x2 = x1; 
+            
+            foreach (int value in MyArray)
             {
-                if (x1 <= i) { x2 = x1; x1 = i; }
-                else if (x2 < i) { x2 = i; }
+            if (x1 <= value)
+                {
+                x2 = x1;
+                x1 = value;
+                }
+            else if (x2 < value)
+                {
+                x2 = value;
+                }
             }
-
-
-
-//____________________________________Вывод результата________________________________________
 
             Console.WriteLine("Второе наибольшее значение в массиве:");
             Console.WriteLine(x2);
             Console.ReadLine();
+
         }
     }
 }
