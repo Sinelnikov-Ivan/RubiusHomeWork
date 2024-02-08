@@ -19,9 +19,9 @@
                 && (arrayLenght > 1))                                   
                 );
 
-            int[] MyArray = new int[arrayLenght];                       
+            int[] myArray = new int[arrayLenght];                       
 
-            for (int i = 0; i < MyArray.Length; i++)                
+            for (int i = 0; i < myArray.Length; i++)                
             {
                 do
                 { 
@@ -29,13 +29,13 @@
                 }
                 while (!int.TryParse(Console.ReadLine(), out valueOfArray));
             
-            MyArray[i] = valueOfArray;
+            myArray[i] = valueOfArray;
             }
 
             int x1 = int.MinValue;                              
             int x2 = x1; 
             
-            foreach (int value in MyArray)
+            foreach (int value in myArray)
             {
             if (x1 <= value)
                 {
