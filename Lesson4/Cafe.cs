@@ -23,13 +23,13 @@ namespace Lesson4
         {
             if (numberOfAvailableTabless > 0)
             {
-            ListVisitorsCafe.Add(visitor);
-            numberOfAvailableTabless--;
-            Console.WriteLine($"В список заказавших столик в кафе {name} добавлен посетитель {visitor.name}");
+                ListVisitorsCafe.Add(visitor);
+                numberOfAvailableTabless--;
+                Console.WriteLine($"В список заказавших столик в кафе {name} добавлен посетитель {visitor.name}");
             }
             else
             {
-            Console.WriteLine($"В кафе {name} нет свободных столиков и посетителю {visitor.name} не смог забронировать столик");
+                Console.WriteLine($"В кафе {name} нет свободных столиков и посетителю {visitor.name} не смог забронировать столик");
             }
         }
     }
