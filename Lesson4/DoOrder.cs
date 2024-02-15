@@ -8,36 +8,34 @@ namespace Lesson4
 {
     internal class DoOrder
     {
-        public DoOrder(Visitors visitor, Cafe cafe)
+        public DoOrder(Visitor visitor, Cafe cafe)
         {
 
-            bool x = false;
+            bool checkBookTable = false;                                            // Переменная для проверки факта заказа столика
 
             for (int i = 0; i < cafe.ListVisitorsCafe.Count; i++)
             {                
-                if ((visitor.nameVisitor.Equals(cafe.ListVisitorsCafe[i].nameVisitor))          // Посетитель забронировал столик?
-                && (visitor.favoriteCafe.Equals(cafe.cafeName)))                                // Посетитель является постоянным клиентом?
+                if ((visitor.name.Equals(cafe.ListVisitorsCafe[i].name))            // Посетитель забронировал столик?
+                && (visitor.favoriteCafe.Equals(cafe.name)))                        // Посетитель является постоянным клиентом?
                 {
-                Console.WriteLine($"Посетитель {visitor.nameVisitor} есть в списке тех кто забронировал столик, поэтому успешно сделал заказ и получил скидку как постоянный клиент в кафе {cafe.cafeName}");
-                x = true;
-                    break;
+                Console.WriteLine($"Посетитель {visitor.name} есть в списке тех кто забронировал столик, поэтому успешно сделал заказ и получил скидку как постоянный клиент в кафе {cafe.name}");
+                checkBookTable = true;
+                break;
                 }
                                
-                if (visitor.nameVisitor.Equals(cafe.ListVisitorsCafe[i].nameVisitor))           // Посетитель забронировал столик?
+                if (visitor.name.Equals(cafe.ListVisitorsCafe[i].name))             // Посетитель забронировал столик?
                 {
-                Console.WriteLine($"Посетитель {visitor.nameVisitor} есть в списке тех кто забронировал столик, поэтому успешно сделал заказ в кафе {cafe.cafeName}");
-                x = true;
-                    break;
+                Console.WriteLine($"Посетитель {visitor.name} есть в списке тех кто забронировал столик, поэтому успешно сделал заказ в кафе {cafe.name}");
+                checkBookTable = true;
+                break;
                 }                 
             }
-            if (x == false)                                                                     // Посетитель не забронировал столик/
+            if (checkBookTable == false)                                            // Посетитель не забронировал столик/
             {
-                Console.WriteLine($"Посетитель {visitor.nameVisitor} не забронировал столик и его заказ в кафе {cafe.cafeName} не выполнен");
+                Console.WriteLine($"Посетитель {visitor.name} не забронировал столик и его заказ в кафе {cafe.name} не выполнен");
             }
-        }            
-
-
-        }
-        
+        }         
     }
+        
+}
 
