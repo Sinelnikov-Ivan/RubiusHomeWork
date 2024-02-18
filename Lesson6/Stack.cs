@@ -35,7 +35,7 @@ namespace Lesson6
         {
             if (listOfItem.Count == 0)
             {
-                Console.WriteLine($"Default value of {typeof(T)} is {(default(T) == null ? "null" : default(T).ToString())}.");
+                Console.WriteLine($"Стек пуст возвращаем тип {typeof(T)} значение {(default(T) == null ? "null" : default(T).ToString())}.");
                 return default (T);
             }
             else
