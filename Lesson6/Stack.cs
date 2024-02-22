@@ -25,9 +25,9 @@ namespace Lesson6
             }
             else
             {   
-            var result = listOfItem [listOfItem.Count - 1];
-            listOfItem.RemoveAt (listOfItem.Count-1);               
-            return result;
+                var result = listOfItem [listOfItem.Count - 1];
+                listOfItem.RemoveAt (listOfItem.Count-1);               
+                return result;
             }
         }
 
