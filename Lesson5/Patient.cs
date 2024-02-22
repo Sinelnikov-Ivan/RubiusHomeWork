@@ -19,7 +19,7 @@ namespace Lesson5
             this.disease = disease;
         }
 
-        public void selfCure ()
+        public void SelfCure ()
         {
             Random rnd = new Random();
             var randomCure = rnd.Next(0, 2);
@@ -44,7 +44,7 @@ namespace Lesson5
             }
         }
 
-        public void introduceYourself()
+        public void IntroduceYourself()
         {   if (disease == false)
             {
                 Console.WriteLine("Пациент:");
