@@ -15,23 +15,24 @@ namespace Lesson5
             Patient patient2 = new Patient ("Дядя Вася симулянт", 40, false);
             Patient patient3 = new Patient ("Дядя Стёпа", 30, true);
 
-            patient1.introduceYourself();
-            patient2.introduceYourself();
-            patient3.introduceYourself();
+            patient1.IntroduceYourself();
+            patient2.IntroduceYourself();
+            patient3.IntroduceYourself();
                       
-            patient1.selfCure();
-            patient2.selfCure();
-            patient3.selfCure();
+            patient1.SelfCure();
+            patient2.SelfCure();
+            patient3.SelfCure();
 
-            doctor1.introduceYourself();
-            doctor2.introduceYourself();
-            doctor3.introduceYourself();
+            doctor1.IntroduceYourself();
+            doctor2.IntroduceYourself();
+            doctor3.IntroduceYourself();
 
             doctor1.Cure(patient1);
             doctor2.Cure(patient2);
             doctor3.Cure(patient3);
 
             Console.ReadLine ();   
+
         }
     }
 }
