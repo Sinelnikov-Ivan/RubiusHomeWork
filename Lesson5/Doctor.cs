@@ -9,11 +9,11 @@ namespace Lesson5
 {
     public class Doctor
     {
-        public string name;
-        public int age;
-        public string specialization;
-        public int cureSuccess;
-        public int cureFailure;          
+        private string name;
+        private int age;
+        private string specialization;
+        private int cureSuccess;
+        private int cureFailure;          
 
         public Doctor (string name, int age, string specialization,  int cureSuccess, int cureFailure)
         {
@@ -49,13 +49,24 @@ namespace Lesson5
             }
         }
 
-        public void introduceYourself()
+        public void IntroduceYourself()
         {
             Console.WriteLine("Врач:");
             Console.WriteLine($"Меня зовут {name}, я врач, мне {age} лет, моя специализация {specialization}.");
             Console.WriteLine($"Успешно вылечил {cureSuccess} человек, не вылечил {cureFailure} человек.");
-        }       
+        }
+        
+
+
+
+
+
     }
 }
 
 
+
+// public enum Specialization
+//      {
+//          Терапевт, Кардиолог, Эндокринолог, Отоларинголог, Инфекционист, Пульмонолог, Хирург, Офтальмолог
+//       };
