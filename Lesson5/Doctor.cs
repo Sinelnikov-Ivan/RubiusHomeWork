@@ -48,31 +48,11 @@ namespace Lesson5
                 cureFailure++;
             }
         }
-
         public void IntroduceYourself()
         {
             Console.WriteLine("Врач:");
             Console.WriteLine($"Меня зовут {name}, я врач, мне {age} лет, моя специализация {specialization}.");
             Console.WriteLine($"Успешно вылечил {cureSuccess} человек, не вылечил {cureFailure} человек.");
-
         }  
     }
 }
-
-        }
-        
-
-
-
-
-
-    }
-}
-
-
-
-// public enum Specialization
-//      {
-//          Терапевт, Кардиолог, Эндокринолог, Отоларинголог, Инфекционист, Пульмонолог, Хирург, Офтальмолог
-//       };
-
