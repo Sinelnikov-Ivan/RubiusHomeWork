@@ -26,8 +26,10 @@
                 { 
                     Console.WriteLine($"Введите целое значение элемента массива номер {i+1}"); 
                 }
-                while (!int.TryParse(Console.ReadLine(), out valueOfArray));
-            
+
+
+                while (!int.TryParse(Console.ReadLine(), out valueOfArray));      
+
             myArray[i] = valueOfArray;
             }
 
