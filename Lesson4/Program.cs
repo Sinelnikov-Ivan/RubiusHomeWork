@@ -6,6 +6,7 @@
         {
             Cafe сafe1 = new Cafe ("Бургер Кинг",1);             // Создаём экземпляр сafe1
 
+
             Visitor visitor1 = new Visitor ("Mike", сafe1);      // Создаём посетителя visitor1 с именем и любимым кафе сafe1
             Visitor visitor2 = new Visitor ("Kavin", сafe1);     // Создаём посетителя visitor2 с именем и любимым кафе сafe1
             Visitor visitor3 = new Visitor ("Ben");              // Создаём посетителя visitor3 с именем

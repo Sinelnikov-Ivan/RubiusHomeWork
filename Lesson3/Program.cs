@@ -27,6 +27,7 @@
                     Console.WriteLine($"Введите целое значение элемента массива номер {i+1}"); 
                 }
                 while (!int.TryParse(Console.ReadLine(), out valueOfArray));            
+
             myArray[i] = valueOfArray;
             }
 
@@ -49,6 +50,7 @@
             Console.WriteLine("Второе наибольшее значение в массиве:");
             Console.WriteLine(x2);
             Console.ReadLine();
+
         }
     }
 }
