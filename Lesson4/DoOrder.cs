@@ -23,14 +23,15 @@ namespace Lesson4
                 checkBookTable = true;
                 break;
 
-                    Console.WriteLine($"Посетитель {visitor.name} есть в списке тех кто забронировал столик, поэтому успешно сделал заказ и получил скидку как постоянный клиент в кафе {cafe.name}");
-                    checkBookTable = true;
-                    break;
 
                 }
                                
                 if (visitor.name.Equals(cafe.ListVisitorsCafe[i].name))             // Посетитель забронировал столик?
                 {
+
+                Console.WriteLine($"Посетитель {visitor.name} есть в списке тех кто забронировал столик, поэтому успешно сделал заказ в кафе {cafe.name}");
+                checkBookTable = true;
+                break;
 
                 Console.WriteLine($"Посетитель {visitor.name} есть в списке тех кто забронировал столик, поэтому успешно сделал заказ в кафе {cafe.name}");
                 checkBookTable = true;
@@ -45,12 +46,13 @@ namespace Lesson4
                     Console.WriteLine($"Посетитель {visitor.name} есть в списке тех кто забронировал столик, поэтому успешно сделал заказ в кафе {cafe.name}");
                     checkBookTable = true;
                     break;
+
                 }                 
             }
-                if (checkBookTable == false)                                            // Посетитель не забронировал столик/
-                {
-                    Console.WriteLine($"Посетитель {visitor.name} не забронировал столик и его заказ в кафе {cafe.name} не выполнен");
-                }
+            if (checkBookTable == false)                                            // Посетитель не забронировал столик/
+            {
+                Console.WriteLine($"Посетитель {visitor.name} не забронировал столик и его заказ в кафе {cafe.name} не выполнен");
+            }
         }         
     }
         
