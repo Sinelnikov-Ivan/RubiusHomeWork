@@ -4,6 +4,8 @@
     {
         static void Main(string[] args)
         {
+
+            Cafe сafe1 = new Cafe ("Бургер Кинг",1);             // Создаём экземпляр сafe1
             Cafe сafe1 = new Cafe ("Бургер Кинг",5);             // Создаём экземпляр сafe1 и указываем количество свободных столиков
 
             Visitor visitor1 = new Visitor ("Mike", сafe1);      // Создаём посетителя visitor1 с именем и любимым кафе сafe1
