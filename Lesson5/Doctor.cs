@@ -54,6 +54,11 @@ namespace Lesson5
             Console.WriteLine("Врач:");
             Console.WriteLine($"Меня зовут {name}, я врач, мне {age} лет, моя специализация {specialization}.");
             Console.WriteLine($"Успешно вылечил {cureSuccess} человек, не вылечил {cureFailure} человек.");
+
+        }  
+    }
+}
+
         }
         
 
@@ -70,3 +75,4 @@ namespace Lesson5
 //      {
 //          Терапевт, Кардиолог, Эндокринолог, Отоларинголог, Инфекционист, Пульмонолог, Хирург, Офтальмолог
 //       };
+
