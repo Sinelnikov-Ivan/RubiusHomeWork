@@ -28,7 +28,7 @@ namespace Lesson10
             Directory.Delete(unZipDirectory, true);
             using var filestreamTXT = new FileStream(pathToTxtFile, FileMode.CreateNew);
             using var streamwriterTXT = new StreamWriter(filestreamTXT);
-            streamwriterTXT.WriteLine(pathToCSVFile);           
+            streamwriterTXT.Write(pathToCSVFile);           
         }
     }
 }
