@@ -19,16 +19,16 @@ namespace Lesson10
             DirectoryInfo di = new DirectoryInfo(unZipDirectory);
             foreach (DirectoryInfo dir in di.GetDirectories())
             {
-                streamwriterCSV.WriteLine ("Папка \t" + dir.Name + "\t" + dir.LastWriteTime);  
+                streamwriterCSV.Write ("Папка \t" + dir.Name + "\t" + dir.LastWriteTime + "\t");  
             }
             foreach (FileInfo file in di.GetFiles())
             {
-                streamwriterCSV.WriteLine ("Файл \t" + file.Name + "\t" + file.LastWriteTime);
+                streamwriterCSV.Write ("Файл \t" + file.Name + "\t" + file.LastWriteTime + "\t");
             }
             Directory.Delete(unZipDirectory, true);
             using var filestreamTXT = new FileStream(pathToTxtFile, FileMode.CreateNew);
             using var streamwriterTXT = new StreamWriter(filestreamTXT);
-            streamwriterTXT.Write(pathToCSVFile);           
+            streamwriterTXT.Write (pathToCSVFile);           
         }
     }
 }
