@@ -9,12 +9,12 @@ namespace Lesson10
             string currentDirectory = Environment.CurrentDirectory;
             string pathToZipFile = Path.GetFullPath("MyZIPFile.zip");
             string unZipDirectory = currentDirectory + "\\UnZipDir";
-            string PathToTxtFile = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\AppData\\Lesson10_Homework.txt";
-            string PathToCSVFile = currentDirectory + "\\MyCSVFile.csv";
-            File.Delete (PathToTxtFile);
-            File.Delete (PathToCSVFile);
+            string pathToTxtFile = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\AppData\\Lesson10_Homework.txt";
+            string pathToCSVFile = currentDirectory + "\\MyCSVFile.csv";
+            File.Delete (pathToTxtFile);
+            File.Delete (pathToCSVFile);
             ZipFile.ExtractToDirectory (pathToZipFile, "UnZipDir");         
-            using var filestreamCSV = new FileStream (PathToCSVFile, FileMode.CreateNew);
+            using var filestreamCSV = new FileStream (pathToCSVFile, FileMode.CreateNew);
             using var streamwriterCSV = new StreamWriter (filestreamCSV);            
             DirectoryInfo di = new DirectoryInfo(unZipDirectory);
             foreach (DirectoryInfo dir in di.GetDirectories())
@@ -26,9 +26,9 @@ namespace Lesson10
                 streamwriterCSV.WriteLine ("Файл \t" + file.Name + "\t" + file.CreationTime);
             }
             Directory.Delete(unZipDirectory, true);
-            using var filestreamTXT = new FileStream(PathToTxtFile, FileMode.CreateNew);
+            using var filestreamTXT = new FileStream(pathToTxtFile, FileMode.CreateNew);
             using var streamwriterTXT = new StreamWriter(filestreamTXT);
-            streamwriterTXT.WriteLine(PathToCSVFile);           
+            streamwriterTXT.WriteLine(pathToCSVFile);           
         }
     }
 }
